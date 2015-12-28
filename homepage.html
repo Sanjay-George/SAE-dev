@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel=stylesheet href="vendors/css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="slick-1.5.9/slick/slick.css">
+        <link rel="stylesheet" href="slick-1.5.9/slick/slick-theme.css">
+          <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" href="resources/css/homepage2.css">
+        <link rel="stylesheet" href="resources/css/home_queries.css">
+         <style >
+    
+            
+        </style>
+   
+        
+    </head>
+    
+    <body>
+        
+        <section class="header-section">
+            <div class="container-fluid">
+                
+                <div class="row header">
+                    <div class="col-md-4 col-xs-4 logo-holder">
+                        <img class="logo" src="resources/css/images/logo.jpg">
+                    </div>
+                    <div class="col-md-8 col-xs-8 main-nav">
+                        <ul>
+                            <li><a href="#" class="selected">Home</a></li>
+                            <li><a href="#">the team</a></li>
+                            <li><a href="#">Photos</a></li>
+                            <li><a href="#">Other updates</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                
+            <div class="row">
+                <div class="slider">
+                    
+                    <div class="item">
+                        <div class="hero-content">
+                            <img class="hero-img" src="carousel-images/night.jpg">
+                            <span class="hero-text">
+                                <h1>Something amazing happened!</h1>
+                                <p>A brief description about the amazing thing that happened..</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="hero-content">
+                            <img class="hero-img" src="carousel-images/flowers.jpg">
+                            <span class="hero-text">
+                                <h1>Something really amazing happened!</h1>
+                                <p>A brief description about the amazing thing that happened..</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="hero-content">
+                            <img class="hero-img" src="carousel-images/flower.jpg">
+                            <span class="hero-text">
+                                <h1>Something really and absolutely amazing happened!</h1>
+                                <p>A brief description about the amazing thing that happened..jkfdkjfkjadj djakfjad kjadfk dakjf djjfadk jdakfj ad jdakfj dakjjfadf daf asdfjadkfj adfkjj,adljfkadj dsafdaf jd flkadfkj lkjdflkjad flkd fkdajf adkfj dakjf</p>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+           
+            </div>
+                
+                                
+        </section>
+            
+            
+        <section class="any-other-section">
+        </section>
+            
+            
+        <section class="footer">
+           <div class="container">
+               <div class="social-nav">
+                <ul>
+                    <li><a class="facebook"><i class="ion-social-facebook"></i></a></li>
+                    <li><a class='twitter'><i class="ion-social-twitter"></i></a></li>
+                    <li><a class="instagram"><i class="ion-social-instagram"></i></a></li>
+                
+                </ul></div>
+            
+            <div class="row copyright">
+                <p>Copyright &copy; 2015 by phoenixracing&#64;sae&#95;svnit. All rights reserved.</p>
+            </div>
+            </div> 
+        </section>
+        
+        
+      
+            
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="slick-1.5.9/slick/slick.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.slider').slick({
+                    autoplay:false,
+                    autoplaySpeed:5000,
+                    dots:true,
+                    mobileFirst:true,
+                    pauseOnHover:false,
+                    fade:false,
+                    responsive:[
+                        {
+                            breakpoint: 1000,
+                            settings: {
+                                autoplay:false,
+                                fade:false
+                                
+                            }
+                        },
+                        {
+                            breakpoint:500,
+                            settings:{
+                                dots:false,
+                                fade:true,
+                                autoplay:true,
+                                adaptiveHeight:false,
+                                arrows:false
+                            }
+                        },
+                        {
+                            breakpoint:200,
+                            settings:"unslick"
+                        }
+                    ]
+                  
+                    
+                    
+                    
+                });
+            })
+            
+            /* to re-render the webpage when changing orientation of device*/
+            var supportsOrientationChange = "onorientationchange" in window,
+            orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+
+            window.addEventListener(orientationEvent, function() {
+                window.location.reload()
+                }, false);   
+        </script>
+        
+    </body>
+</html>
