@@ -107,54 +107,7 @@
             
         <script type="text/javascript" src="jquery-1.11.3.js"></script>
         <script type="text/javascript" src="slick-1.5.9/slick/slick.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('.slider').slick({
-                    autoplay:false,
-                    autoplaySpeed:5000,
-                    dots:true,
-                    mobileFirst:true,
-                    pauseOnHover:false,
-                    fade:false,
-                    responsive:[
-                        {
-                            breakpoint: 1000,
-                            settings: {
-                                autoplay:false,
-                                fade:false
-                                
-                            }
-                        },
-                        {
-                            breakpoint:500,
-                            settings:{
-                                dots:false,
-                                fade:true,
-                                autoplay:true,
-                                adaptiveHeight:false,
-                                arrows:false
-                            }
-                        },
-                        {
-                            breakpoint:200,
-                            settings:"unslick"
-                        }
-                    ]
-                  
-                    
-                    
-                    
-                });
-            })
-            
-            /* to re-render the webpage when changing orientation of device*/
-            var supportsOrientationChange = "onorientationchange" in window,
-            orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
-
-            window.addEventListener(orientationEvent, function() {
-                window.location.reload()
-                }, false);   
-        </script>
+        <script type="text/javascript" src="slider.js"></script>
         
     </body>
 </html>
