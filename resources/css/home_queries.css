@@ -1,79 +1,64 @@
-/* LANDSCAPE */
+/* LANDSCAPE upto 770px*/
 
 /* for small mobile devices  */
 @media screen and (max-width:500px) and (orientation:landscape)
 {   
     
     body{font-size:16px; }
-   
+    .header-section{
+    background-image:linear-gradient(#000000, rgba(189, 11, 11, 0.75)); padding-bottom: 20px;}
     .main-nav ul{
         display: none;
     }
     .logo{
         max-height: 15vmax;
-        max-width: 15vmax;
-    }
-    
-    
+        max-width: 15vmax;}
     .slider{display: block; overflow:hidden; }
      h1{font-size:180%;margin:5px 0px;}
     p{font-size: 100%;}
     .hero-content{
         max-height: 100%;
-        padding-bottom: 10px;
-    }
-    .hero-text{ position: static; display: block; padding:10px;}
+        padding-bottom: 10px;}
+    .hero-text{ position: static; display: block;   padding:10px;}
     .hero-img{
         position:static; }
-    
     .footer{font-size: 140%;}
     .social-nav{min-width:50%;}
     .copyright>p{font-size: 60%;}
-    
-    
-  
 }
+
 
 /* medium mobile devices*/
 @media screen and (min-width:501px) and (max-width:770px) and (orientation:landscape)
-{   .header-section{padding-bottom: 20px; height:auto;}
+{   
+        .header-section{padding-bottom: 20px; height:auto; background-image:linear-gradient(#000000, rgba(189, 11, 11, 0.75));}
      body{font-size:16px; }
     .main-nav{padding-left:0px;padding-right: 0px;}
     .main-nav ul{
         display: flex;
         padding-left: 0px;
-        margin-top :10px;
-    }
+        margin-top :10px;}
     .logo{
         max-height: 12vw;
-        max-width: 12vw;
-    }
-    
+        max-width: 12vw;}
     .hero-text{ bottom:0px; padding-bottom: 5px;}
     h1{font-size: 180%; word-spacing: 1px;}
     
 }
 
 
-
-
-/* PORTRAIT */
+/* PORTRAIT upto 770px*/
 
 /* for  small mobile devices  */
 @media screen and (max-width:500px) and (orientation:portrait)
 {   
-    .header-section{height:100%; padding-bottom: 20px;}
+    .header-section{height:100%; padding-bottom: 20px; background-image:linear-gradient(#000000, rgba(189, 11, 11, 0.75));}
     body{font-size:16px; }
-   
-    .main-nav ul{
-        display: none;
-    }
+   .main-nav ul{
+        display: none;}
     .logo{
         max-height: 15vmax;
-        max-width: 15vmax;
-    }
-    
-    
+        max-width: 15vmax;}
     .slider{display:table; }
     .item{margin-bottom: 10px;}
      h1{font-size:160%;margin:5px 0px;letter-spacing: 0px; word-spacing: 1px;text-transform:capitalize; font-weight: 400;}
@@ -82,52 +67,48 @@
         min-height: 100%;
         padding-bottom: 10px;
         margin:10px;
-        display: table-cell;
-    }
-    
+        display: table-cell; }
     .hero-text{ position: static; display:block; min-height: 100%; padding:0px 10px;}
     .hero-img{
         position:static; }
-    
     .footer{font-size: 140%;}
     .social-nav{min-width:50%;}
     .copyright>p{font-size: 60%;}
-    
-    
-  
 }
 
 
 /*large mobile devices*/
-@media screen and (min-width:501px) and (max-width:650px) and (orientation:portrait)
+@media screen and (min-width:501px) and (max-width:770px) and (orientation:portrait)
 {   
-    .header-section{min-height: auto;padding-bottom: 50px;}
+    .header-section{min-height: auto;padding-bottom: 50px; background-image:linear-gradient(#000000, rgba(189, 11, 11, 0.75));}
     body{font-size:16px; }
-   
-    .main-nav ul{
-        display: none;
-    }
+   .main-nav ul{
+        display: none;}
     .logo{
         max-height: 15vmax;
-        max-width: 15vmax;
-    }
-    
-    
+        max-width: 15vmax;}
     .slider{display: block; overflow:hidden; }
      h1{font-size:180%;margin:5px 0px;}
     p{font-size: 100%;}
     .hero-content{
         max-height: auto;
-        padding-bottom: 10px;
-    }
+        padding-bottom: 10px;}
     .hero-text{ position: static; display: block; padding:10px;}
     .hero-img{
         position:static; }
-    
     .footer{font-size: 140%;}
     .social-nav{min-width:50%;}
     .copyright>p{font-size: 60%;}
-    
-    
-  
+}
+
+
+/* COMMON from 771px  No hamburger menu*/
+
+/* Higher than FHD */
+@media screen and (min-width:1921px)
+{
+    .container-fluid{
+        max-width: 1920px;
+        margin: auto;
+    }
 }

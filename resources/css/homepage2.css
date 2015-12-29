@@ -1,4 +1,4 @@
-/*base-color:#2ecc71*/
+/*base-color:#ffa8a8*/
 
 *{
   /*outline:1px solid red;*/
@@ -66,16 +66,16 @@ body{
     
 }
 .main-nav a{
-    border: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     padding: 5px;
     text-decoration: none;
     text-transform: uppercase;
     color:#ffa8a8;
-    transition: border .5s, color .5s;
+    transition: border-bottom .5s, color .5s;
 }
 .main-nav a:hover{
     
-    border: 2px solid #ff3131;
+    border-bottom: 2px solid #ff3131;
     color:#ffa8a8;
 }
 
