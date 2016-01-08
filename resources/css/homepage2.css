@@ -20,8 +20,9 @@ body{
 }
 .section-heading{
     color:#000;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: 'Raleway', sans-serif;
+    
     margin-bottom: 20px;
     
    
@@ -29,15 +30,21 @@ body{
 .section-heading>h2{
     font-size: 200%;
     text-align: center;
-    box-shadow: 0px 1px 3px #000;
+    
     padding: 5px;
      
+}
+.light{
+   color:#000; 
+}
+.dark{
+   color:#fff; 
 }
 
 .redirect-btn{
     padding: 10px;
-    color:#000;
-    border:2px solid #e74c3c;
+    color:#7493b2;
+    border:2px solid #7493b2;
     /*border-radius: 15%;*/
     margin: 10px 5px;
     
@@ -45,9 +52,9 @@ body{
 
 .redirect-btn-full{
     padding: 10px;
-    color:#fff;
-    background: #d62c1a;
-    border:2px solid #d62c1a;
+    color:#000;
+    background: #7493b2;
+    border:2px solid #7493b2;
     /*border-radius: 15%;*/
     margin:10px 10px;
     text-decoration: none;
@@ -59,16 +66,17 @@ body{
     padding-top:85px;
     padding-bottom: 50px;
     /*box-shadow: 0px 2px 10px ;*/
+   
 }
 
 /* -----------------HEADER section----------------------*/
 .header-section{
       /* background-image:linear-gradient(hsla(263, 68%, 9%, 0.97), rgba(2, 0, 25, 0.82)),url(images/back2.jpg); */
-       background-image:linear-gradient(#000000, rgba(189, 11, 11, 0.75)),url(images/back2.jpg);
+       background-image:linear-gradient(#000000, rgba(52, 73, 94, 0.69)),url(images/back2.jpg);
     background-position:center;
     background-attachment: fixed;
     min-height: 100vh;
-    
+    	
 }
 
 /*-----------------top row with nav------------------------*/
@@ -114,18 +122,18 @@ body{
     padding: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    color:#ffa8a8;
+    color:#89a4be;
     transition: border-bottom .5s, color .5s;
 }
 .main-nav a:hover{
     
-    border-bottom: 2px solid #ff3131;
-    color:#ffa8a8;
+    border-bottom: 2px solid #c0cedc;
+    color:#c0cedc;
 }
 
 .main-nav .selected{
-    color:#ff3131;
-    border: 2px solid #ff3131;
+    color:#c0cedc;
+    border: 2px solid #c0cedc;
     padding: 5px;
 
 
@@ -204,7 +212,7 @@ p{
 .latest-car{
     color:#000;
     
-    background-color: #f0f0f0;
+    background-color: #d6dfe9;
     
 }
 .car-pic{
@@ -309,7 +317,7 @@ p{
 }
 .car-desc>h4{
    font-family: 'PT Sans Narrow', sans-serif; 
-    font-size: 150%;
+    font-size: 120%;
     letter-spacing: 1px;
 }
 .sub-nav1{
@@ -322,7 +330,10 @@ p{
 /*----------------END OF CAR SECTION-------------------*/
 /*-----------------WHAT'S NEW SECTION ----------------*/
 .whats-new{
-  
+  background-image:linear-gradient(rgba(137, 164, 190, 0.83),#000000),url(images/back2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+   
 }
 .news-slider{
     overflow: hidden;
@@ -360,12 +371,14 @@ p{
 }
 .news-header>h1{
     color:#000;
+     color:#fff;
     font-size: 225%;
     font-weight: 400;
 }
 
 .news-para{
     color: #000;
+     color:#fff;
 }
 
 /*-----------------END OF WHAT'S NEW SECITON-----------*/
@@ -377,6 +390,7 @@ p{
     padding: 50px 0px;
     height: auto;
     margin-bottom: 0px;
+    background-color: #e1e8ef;
 }
 
 
@@ -434,13 +448,13 @@ p{
    
     width: 100%;
     height:auto;
-    margin-top: 20px;
+    margin-top: 0px;
     color:white;
     height:auto;
     font-weight: 100;
     font-size: 100%;
    
-    background: linear-gradient(rgba(134, 80, 80, 0.82) 20%, #000000 80%);
+    background: linear-gradient(rgba(62, 87, 113, 0.67) 20%, #000000 80%);
 
 }
 .footer-row{
@@ -528,7 +542,7 @@ p{
   left: 0;
   right: 0;
   bottom: 0;
-  background: #d62c1a;
+  background: #7493b2;
     
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
