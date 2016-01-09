@@ -1,14 +1,14 @@
-/*base-color:#ff3131*/
+/*base-color:#e74c3c*/
 
 *{
- /* outline:1px solid red;*/
+outline:1px solid red;
     
 }
 
 body{
     font-family:"Lato",sans-serif;
     font-size: 20px;
-    color:#000;
+    color:#fff;
  
     background-position: center;
     background-attachment: fixed;
@@ -18,78 +18,217 @@ body{
 
     
 }
-
-
-/* -----------------HEADER section----------------------*/
-.header-section{
-      /* background-image:linear-gradient(hsla(263, 68%, 9%, 0.97), rgba(2, 0, 25, 0.82)),url(images/back2.jpg); */
-       background-image:linear-gradient(#000000, rgba(189, 11, 11, 0.75)),url(images/back2.jpg);
-    height: auto;
-}
-
-/*-----------------top row with nav------------------------*/
-.header
-{
-    margin: 20px 0px;
-    justify-content: center;
-    max-height:15vh;
-    margin-bottom: 30px;
-}
-
-.logo{
-    max-width: 100%;
-    max-height: 15vh;
-    border-radius: 50%;
-}
-.logo-holder{
-    margin:auto;
-    text-align: center;
-}
-
-.main-nav{
-    margin: auto;
-    justify-content: center;
-}
-.main-nav ul{
-    justify-content: center;
-    list-style: none;
-    display: flex;
-    min-width:100%;
-    margin-top:50px;
+.section-heading{
+    color:#000;
+    text-transform:uppercase;
+    font-family: 'Raleway', sans-serif;
     
-}
-
-.main-nav li{
-  min-width:20%;
-    text-align: center;
-    height: auto;
+    margin-bottom: 20px;
     
+   
 }
-.main-nav a{
-    border-bottom: 2px solid transparent;
+.section-heading>h2{
+    font-size: 200%;
+    text-align: center;
+    
     padding: 5px;
+     
+}
+.light{
+   color:#000; 
+}
+.dark{
+   color:#fff; 
+}
+
+.redirect-btn{
+    padding: 10px;
+    color:#7493b2;
+    border:2px solid #7493b2;
+    /*border-radius: 15%;*/
+    margin: 10px 5px;
+    
+}
+
+.redirect-btn-full{
+    padding: 10px;
+    color:#000;
+    background: #7493b2;
+    border:2px solid #7493b2;
+    /*border-radius: 15%;*/
+    margin:10px 10px;
     text-decoration: none;
-    text-transform: uppercase;
-    color:#ffa8a8;
-    transition: border-bottom .5s, color .5s;
-}
-.main-nav a:hover{
     
-    border-bottom: 2px solid #ff3131;
-    color:#ffa8a8;
+    
 }
 
-.main-nav .selected{
-    color:#ff3131;
-    border: 2px solid #ff3131;
-    padding: 5px;
-
-
+.section{
+    padding-top:85px;
+    padding-bottom: 50px;
+    /*box-shadow: 0px 2px 10px ;*/
+   
+}
+/*------------CAR HEADER SECtION--------------------------*/
+header{
+     background-image:linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.42)),url(images/myferrari3.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    
+}
+.feature-head{
+    position: relative;
+    min-height:100%;
+    
 }
 
-/*---------END OF HEADER -------------------------------*/
+.feature-head-text{
+    max-height: 40vh;
+    position: absolute;
+    bottom:50px;
+    display: block;
+    width: 90vw;
+    color:white;
+    padding: 1em;
+    left:5vw;
+}
+h1{
+    font-size: 370%;
+    font-weight:300;
+    color: rgba(255, 255, 255, 0.89);
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+   font-family: 'PT Sans Narrow', sans-serif;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+   
+}
+
+/*------------------CAR SECTION----------------------------*/
+
+.latest-car{
+    color:#000;
+    
+    background-color: #d6dfe9;
+    
+}
+.car-pic{
+    position: relative;
+    max-width: 100%;
+    margin:auto;
+    
+    overflow: hidden;
+    
+    
+}
+.car-pic .col-md-8, .car-pic .col-md-12{
+    padding: 0px;
+    background-color: #000;
+} 
+
+.car-pic .col-md-12{
+    margin: 10px;
+}
+.car-pic .col-md-4{
+    height: 100%;
+}
+
+.image1{
+     overflow:hidden;
+   /* box-shadow: -5px 10px 30px #000;*/
+}
+.image1>img{
+    
+    max-width: 100%;
+    min-height:100%;
+    position: relative;
+    opacity:1;
+    transition: opacity .5s, transform .9s;
+   
+}
+
+.image2{
+    overflow: hidden;
+    max-height:50%;
+    max-width: auto;
+    /*box-shadow: 0px 5px 10px #000;*/
+}
+.image2>img{
+    max-width:100%;
+    max-height:10%;
+    transform: scale(1.15);
+    transition: transform .5s;
+}
+
+.image2>img:hover{
+    transform: scale(1.03);
+}
 
 
+.image1:hover img{
+    opacity:0.5;
+    transform: scale(1.2);
+}
+.image1:hover .text-over-pic{
+    opacity:1;
+   
+}
+
+.text-over-pic{
+    position: absolute;
+    bottom: 0px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width:100%;
+    opacity: 0;
+    transition: opacity .5s;
+    
+}
+.text-over-pic>a{
+    text-decoration: none;
+    color:#fff;
+    vertical-align: middle;
+    background-color:#d62c1a transparent;
+    padding: 10px;
+     
+}
+
+.car-text{
+    margin-top:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.car-desc{
+    background-color:#fff;
+    margin:10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 15px 0px #554b4b;
+    border-radius: 0%;
+   
+    
+}
+.car-desc>h4{
+   font-family: 'PT Sans Narrow', sans-serif; 
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+.sub-nav1{
+    display: none;
+}
+.visible1{
+    display: block;
+}
+
+/*----------------END OF CAR SECTION-------------------*/
 
 
 /*-------------Footer section---------------------------------*/
@@ -99,13 +238,13 @@ body{
    
     width: 100%;
     height:auto;
-    margin-top: 20px;
+    margin-top: 0px;
     color:white;
     height:auto;
     font-weight: 100;
     font-size: 100%;
    
-    background: linear-gradient(rgba(134, 80, 80, 0.82) 20%, #000000 80%);
+    background: linear-gradient(rgba(62, 87, 113, 0.67) 20%, #000000 80%);
 
 }
 .footer-row{
@@ -163,5 +302,49 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
+/*--------------CSS EFFECTS --------------------------------*/
+/*----------------------- Float Shadow-------------*/
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+ 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}

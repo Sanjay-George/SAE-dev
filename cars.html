@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel=stylesheet href="vendors/css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+         
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" href="resources/css/cars.css">
+        <link rel="stylesheet" href="vendors/css/magnific-popup.css"><style>
+            .image-source-link {display: none;text-decoration: none;}
+            .mfp-title{
+                padding: 0px;
+                font-size: 150%;
+            }
+        .mfp-bottom-bar{
+            margin: 10px 0px;
+        }
+        </style>
+    </head>
+    
+    <body>
+        
+        <header>
+            <div class="container-fluid feature-head">
+                <div class="feature-head-text">
+                    <h1>Our Cars</h1></div>
+            </div>
+        </header>
+            
+            
+        <section class="latest-car section">
+            <div class="container">
+                <div class="row section-heading light">
+                    <h2>Phoenix 2.0</h2>
+               
+                </div>
+                
+                <div class="zoom-gallery">
+                    
+                    <a href="content/Apollo-Tyres.jpg" title="Into The Blue" style="width:193px;height:125px;">
+		<img src="content/Apollo-Tyres.jpg" width="193" height="125">
+        
+	</a>
+	<a href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg" title="Light Sabre" style="width:82px;height:125px;">
+		<img src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg" width="82px" height="125">
+	</a>
+                </div>
+                
+                
+                <div class="row car-text">
+                    <div class="col-md-5 col-xs-10 car-desc achieve hvr-float-shadow">
+                        <h4>ACHIEVEMENTS</h4>
+                        <ul class="sub-nav1">
+                            <li>won some shit</li>
+                            <li>won some shit</li>
+                            <li>won some shit</li>
+                            <li>won some shit</li>
+                            <li>won some shit</li>
+                        </ul>
+                        
+                      
+                    </div>
+                    <div class="col-md-5 col-xs-10 car-desc specs hvr-float-shadow">
+                         <h4>SPECS</h4>
+                        
+                        <ul class="sub-nav1">
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                            <li>does some shit</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        
+     
+            
+
+        
+            
+    
+            
+            
+        <section class="footer">
+           <div class="container">
+               <div class="social-nav">
+                <ul>
+                    <li><a class="facebook"><i class="ion-social-facebook"></i></a></li>
+                    <li><a class='twitter'><i class="ion-social-twitter"></i></a></li>
+                    <li><a class="instagram"><i class="ion-social-instagram"></i></a></li>
+                
+                </ul></div>
+            
+            <div class="row copyright">
+                <p>Copyright &copy; 2016 by phoenixracing&#64;sae&#95;svnit. All rights reserved.</p>
+            </div>
+            </div> 
+        </section>
+        
+        
+      
+            
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="vendors/js/magnific-popup.js"></script>
+
+            <script  type="text/javascript">
+                // for gallery pop up
+                $(document).ready(function() {
+	$('.zoom-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside:false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+});
+        //for toggling the achievements and specs list
+                $(document).ready(function() {
+    $('.achieve').click(function() {
+        $('.achieve>.sub-nav1').slideToggle(500);
+        
+    });
+    $('.specs').click(function() {
+        $('.specs>.sub-nav1').slideToggle(500);
+    });
+});
+      
+        </script>
+    
+    
+        
+    </body>
+</html>
