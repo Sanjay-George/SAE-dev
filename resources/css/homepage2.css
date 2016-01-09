@@ -20,7 +20,7 @@ body{
 }
 .section-heading{
     color:#000;
-    text-transform: capitalize;
+    text-transform:uppercase;
     font-family: 'Raleway', sans-serif;
     
     margin-bottom: 20px;
