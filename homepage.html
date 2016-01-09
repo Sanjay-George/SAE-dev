@@ -27,10 +27,10 @@
             <div class="container-fluid">
                 
                 <div class="row header">
-                    <div class="col-md-3 col-xs-4 logo-holder">
+                    <div class="col-md-3 col-xs-3 logo-holder">
                         <img class="logo" src="resources/css/images/logo.jpg" alt="logo">
                     </div>
-                    <div class="col-md-9 col-xs-8 main-nav">
+                    <div class="col-md-9 col-xs-9 main-nav">
                         <ul>
                             <li><a href="#" class="selected">Home</a></li>
                             <li><a href="#">Our Cars</a></li>
@@ -48,7 +48,7 @@
                     
                     <div class="item">
                         <div class="hero-content">
-                            <img class="hero-img" src="carousel-images/night.jpg" alt="hero-image">
+                            <img class="hero-img responsive-img" src="carousel-images/night.jpg" alt="hero-image">
                             <span class="hero-text">
                                 <h6 class="sec-reference">Welcome to</h6>
                                 <h1>Phoenix racing</h1>
@@ -79,7 +79,7 @@
                         </div>
                     </div> 
                     
-                    <div class="item">
+                    <div class="item hide-in-small">
                         <div class="hero-content">
                             <img class="hero-img" src="carousel-images/flower.jpg" alt="hero-image">
                             <span class="hero-text">
@@ -109,24 +109,27 @@
                     <div class="col-md-8">
                         <div class="image1">
                             <img src="content/phoenix.jpg" alt="phoenix-photo">
-                    <span class="text-over-pic"><a href="#" class="hvr-bounce-to-right" >Click here to go to gallery</a></span>
+                    <span class="text-over-pic"><a href="#" class="hvr-bounce-to-right hidden-xs" >Click here to go to gallery</a></span>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="col-md-12">
-                            <div class="image2">
+                            <div class="image2 hidden-xs hidden-sm">
                                 <img src="content/phoenix.jpg" alt="phoenix-photo">
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="image2">
+                            <div class="image2 hidden-xs hidden-sm">
                             <img src="content/logo.jpg" alt="phoenix-photo">
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class=" row hidden-lg hidden-md"><div class="col-xs-12 text-center"><a href="#" class="redirect-btn hvr-pulse-grow" >Go to Gallery</a></div></div>
+                
                 <div class="row car-text">
-                    <div class="col-md-5 car-desc achieve hvr-float-shadow">
+                    <div class="col-md-5 col-xs-10 car-desc achieve hvr-float-shadow">
                         <h4>ACHIEVEMENTS</h4>
                         <ul class="sub-nav1">
                             <li>won some shit</li>
@@ -138,7 +141,7 @@
                         
                       
                     </div>
-                    <div class="col-md-5 car-desc specs hvr-float-shadow">
+                    <div class="col-md-5 col-xs-10 car-desc specs hvr-float-shadow">
                          <h4>SPECS</h4>
                         
                         <ul class="sub-nav1">
@@ -236,7 +239,7 @@
                 </ul></div>
             
             <div class="row copyright">
-                <p>Copyright &copy; 2015 by phoenixracing&#64;sae&#95;svnit. All rights reserved.</p>
+                <p>Copyright &copy; 2016 by phoenixracing&#64;sae&#95;svnit. All rights reserved.</p>
             </div>
             </div> 
         </section>
@@ -289,22 +292,7 @@
                  });
                 
                 
-        /*$(document).ready(function() {
-                     $('.sponsors-list').slick({
-                        autoplay:true,
-                        autoplaySpeed:3000,
-                        dots:false,
-                        slidesToShow:5,
-                        mobileFirst:true,
-                        pauseOnHover:false,
-                        centerMode:true,
-                        centerPadding:'13%',
-                        
-                        
-                     });
-                 });
-                */
-               
+
             </script>
         
     </body>
