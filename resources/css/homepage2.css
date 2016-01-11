@@ -164,7 +164,7 @@ body{
                 max-width: 100%;
                 max-height: auto;
                 position:relative;
-                opacity: .7;
+                opacity: .5;
                 
 }
     /*------------hero text---------------*/
@@ -174,14 +174,14 @@ body{
                 bottom:50px;
                 display: block;
                 max-width: 90vw;
-                color:white;
+                color:#fff;
                 padding: 1em;
             }
             
 h1{
     font-size: 370%;
     font-weight:300;
-    color: rgba(255, 255, 255, 0.78);
+    color: #fff;
     flex-wrap: wrap;
     text-transform: uppercase;
     letter-spacing: 1px;

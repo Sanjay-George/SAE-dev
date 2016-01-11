@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel=stylesheet href="vendors/css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+         
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" href="resources/css/gallery.css">
+        <link rel="stylesheet" href="vendors/css/magnific-popup.css"><style>
+            .image-source-link {display: none;text-decoration: none;}
+            .mfp-title{
+                padding: 0px;
+                font-size: 120%;
+            }
+        .mfp-bottom-bar{
+            margin: 10px 0px;
+        }
+        </style>
+    </head>
+    
+    <body>
+        
+        
+        <section class="header-section">
+            <div class="container-fluid">
+                
+                <div class="row header">
+                    <div class="col-md-3 col-xs-3 logo-holder">
+                        <img class="logo" src="resources/css/images/logo2.png" alt="logo">
+                    </div>
+                    <div class="col-md-9 col-xs-9 main-nav">
+                        <ul>
+                            <li><a href="homepage.html" >Home</a></li>
+                            <li><a href="cars.html" >Our Cars</a></li>
+                            <li><a href="team.html">our team</a></li>
+                            <li><a href="#" class="selected">Gallery</a></li>
+                            <li><a href="#">what's new?</a></li>
+                            
+                        </ul>
+                    </div>
+                </div></div></section>
+                
+        <header>
+            <div class="container-fluid feature-head">
+                <div class="feature-head-text">
+                    <h1>Gallery</h1></div>
+            </div>
+        </header>
+            
+            
+        <section class="gallery section light-bg">
+            <div class="container">
+                <div class="row section-heading light">
+                    <h2>SAE ORIENTATION</h2>
+               
+                </div>
+                <div class="row line top"></div>
+                <div class="row zoom-gallery">
+                    
+                    <a class="img-thumbnail" href="content/orientation-3.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-3-min.jpg" >
+        
+	</a>
+                    <a class="img-thumbnail" href="content/orientation-2.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-2-min.jpg" >
+        
+	</a>
+                    
+                    <a class="img-thumbnail" href="content/orientation-4.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-4-min.jpg" >
+        
+	</a>
+                    <a class="img-thumbnail" href="content/orientation-5.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-5-min.jpg" >
+        
+	</a>
+                         <a class="img-thumbnail" href="content/orientation-1.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-1-min.jpg" >
+        
+	</a>
+          
+                    <a class="img-thumbnail" href="content/orientation-6.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-6-min.jpg" >
+        
+	</a>
+                    <a class="img-thumbnail" href="content/orientation-7.jpg" title="Phoenix 3.0">
+		<img src="content/orientation-7-min.jpg" >
+        
+	</a>
+                        
+                    
+                    
+                    
+                   </div>
+                <div class="row line bottom"></div>
+            </div>
+        </section>
+            
+        
+            
+        <section class="footer">
+           <div class="container">
+               <div class="social-nav">
+                <ul>
+                    <li><a class="facebook" href="https://www.facebook.com/phoenixracing360"><i class="ion-social-facebook"></i></a></li>
+                    <li><a class='twitter' href="https://twitter.com/teamSAE_SVNIT"><i class="ion-social-twitter"></i></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/fsae.svnit/"><i class="ion-social-instagram"></i></a></li>
+                
+                </ul></div>
+            
+            <div class="row copyright">
+                <p>Copyright &copy; 2016 by phoenixracing&#64;sae&#95;svnit. All rights reserved.</p>
+            </div>
+            </div> 
+        </section>
+        
+        
+      
+            
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="vendors/js/magnific-popup.js"></script>
+
+            <script  type="text/javascript">
+                // for gallery pop up
+                $(document).ready(function() {
+	$('.zoom-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside:false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
+});
+              
+        </script>
+    
+    
+        
+    </body>
+</html>

@@ -133,13 +133,13 @@ body{
 
 }
 /*--------------END OF NAV BAR-------------------------*/
-/*------------ HEADER SECtION--------------------------*/
+/*------------CAR HEADER SECtION--------------------------*/
 header{
-     background-image:linear-gradient(rgba(27, 41, 54, 0.53),rgba(0, 0, 0, 0.71) 70%),url(images/team.jpg);
+     
+    background-image:linear-gradient(rgba(38, 54, 69, 0.33),rgb(0, 0, 0) 70%),url(images/gallery.jpg);
     height: 60vh;
     background-size: cover;
     background-position:center;
-    
     background-attachment: fixed;
     
 }
@@ -174,13 +174,75 @@ h1{
    
 }
 
+/*------------------CAR SECTION common-------------------*/
+.zoom-gallery{
+    display: flex;
+    flex-wrap:wrap;
+    /*box-shadow: 0px 1px 2px #000;*/
+    
+}
 
+.car-text{
+    margin-top:10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.car-desc{
+    background-color:#fff;
+    margin:10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 15px 0px #554b4b;
+    border-radius: 0%;
+   
+    
+}
+.car-desc>h4{
+   font-family: 'PT Sans Narrow', sans-serif; 
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+.sub-nav1{
+    display: none;
+}
+.visible1{
+    display: block;
+}
+
+/*----------------END OF CAR SECTION-------------------*/
 /*-----------------Light background section-------------*/
 
 .light-bg{
     background-color:#d6dfe9;
 }
+.img-thumbnail{
+   max-height: auto;
+    background-color: #d6dfe9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+   
+}
+.img-thumbnail>img{
+    max-height:200px;
+    max-width: 100%;
+    margin: 5px 3px;
+     box-shadow: 0px 0px 0px #000;
+    transition: box-shadow .3s;
+   
+}
+.img-thumbnail>img:hover{
+    box-shadow: 0px 10px 15px #000;
+}
 
+.car{
+    color:#000;
+    
+    background-color: #d6dfe9;/*#34495e */
+    
+}
 .line{
     min-height: 3px;
     width:100;
@@ -207,7 +269,22 @@ h1{
 .dark-bg h2{
 color: #fff;
 }
+.dark-bg .img-thumbnail{
+    background: transparent;
+    border: 1px solid transparent;
+}
+.dark-bg .img-thumbnail>img{
+    max-height:200px;
+    max-width: 100%;
+    margin: 5px 3px;
+     transform: scale(1.00);
+    transition: transform .5s;
+   
+}
+.dark-bg .img-thumbnail>img:hover{
+    transform: scale(1.05);
 
+}
 .dark-bg .line{
     min-height: 3px;
     width:100;
@@ -221,55 +298,7 @@ color: #fff;
     box-shadow: 0px -3px 8px #000;
     margin-top:10px;
 }
-/*----------------- TEAM MEMBERS SECTION---------------------*/
-.team-members-row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 15px 0px;
-}
-.member{
-    display:flex;
-    justify-content: center;
-    padding: 30px 10px;
-    position: relative;
-}
-.member img{
-    
-    max-height: 350px;
-    max-width: 100%;
-    position: relative;
-    opacity: 1;
-    transition: opacity .5s
-}
-.bg-black{
-    background-color: #000;
-    position: relative;
-    justify-content: center;
-}
 
-
-.member-text{
-    padding: 10px;
-    min-height: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    left:0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.member-text div
-{
-    max-width: 100%;
-    opacity: 0;
-    transition:opacity .5s;
-}
-.member-text h3, .member-text p{
-    text-align: center;
-}
 /*-------------Footer section---------------------------------*/
 
     
