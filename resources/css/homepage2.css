@@ -201,8 +201,16 @@ h1{
     
 }
 p{
-    font-size: 110%;
+    font-size: 130%;
     font-weight: 300;
+    
+}
+.hero-text a{
+    font-size:85%;
+    display: block;
+    padding: 20px 0px;
+    color:#fff;
+    font-style: italic;
 }
 
 /*---------------End of HEADER section-----------------*/
