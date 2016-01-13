@@ -345,9 +345,13 @@ p{
    
     
 }
+.car-desc ul{
+    list-style: none;
+    padding-left: 20px;
+}
 .car-desc>h4{
    font-family: 'PT Sans Narrow', sans-serif; 
-    font-size: 120%;
+    font-size: 130%;
     letter-spacing: 1px;
 }
 .sub-nav1{
