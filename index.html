@@ -23,15 +23,15 @@
     
     <body>
         
-    <section class="header-section">
+        <header class=" js-nav-bar">
             <div class="container-fluid">
                 
-                <div class="row header js-nav-bar">
+                <div class="row header">
                     <div class="col-md-3 col-xs-3 logo-holder">
                         <img class="logo" src="resources/css/images/logo2.png" alt="logo">
                     </div>
                     <div class="col-md-9 col-xs-9 main-nav">
-                        <ul>
+                        <ul class="js-show">
                             <li><a href="#"  class="selected">Home</a></li>
                             <li><a href="cars.html">Our Cars</a></li>
                             <li><a href="team.html">our team</a></li>
@@ -40,10 +40,13 @@
                             
                         </ul>
                     </div>
+                    <div class="col-md-1 col-xs-2 hamburger-icon"><a class="js-nav-icon"><i class="ion-navicon"></i></a></div>
                 </div>
+        </div></header>
         
                 
-                
+    <section class="header-section">
+        <div class="container-fluid">    
             <div class="row">
                 <div class="slider">
                     
@@ -95,7 +98,7 @@
                 
            
             </div>
-                
+             </div>   
                                 
         </section>
             
@@ -279,9 +282,9 @@
                         $('html,body').animate({scrollTop: $('.js-cars').offset().top},1500);
                                                 
                     }); 
-});
+
                //for news-slider
-                 $(document).ready(function() {
+           
                      $('.news-slider').slick({
                         autoplay:true,
                         autoplaySpeed:3000,
@@ -308,10 +311,10 @@
                      ]
                         
                      });
-                 });
+               
+                    
+                    
             //query for sticky navigation       
-        $(document).ready(function(){
-                
                 $('.js-sticky-start').waypoint(function(direction){
                     if (direction=="down"){
                         $('.js-nav-bar').addClass('sticky-nav');
@@ -324,6 +327,26 @@
                 },{
                     offset:'60px'
                 }); 
+                    
+                    
+            
+                //mobile navigation
+                $('.js-nav-icon').click(function(){
+                   var nav=$('.js-show');
+                    nav.slideToggle(300);
+                    
+                    var icon=$('.js-nav-icon i');
+                    if (icon.hasClass('ion-navicon'))
+                        {
+                            icon.addClass('ion-android-close');
+                            icon.removeClass('ion-navicon');
+                        }
+                    else{
+                            icon.addClass('ion-navicon');
+                            icon.removeClass('ion-android-close');
+                        }
+                   
+                });
              });
             
 
