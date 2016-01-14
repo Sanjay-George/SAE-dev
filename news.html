@@ -11,30 +11,36 @@
          
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" href="resources/css/news.css">
+        <link rel="stylesheet" href="resources/css/news_queries.css">
         
     </head>
     
     <body>
         
         
-        <section class="header-section">
+ <!-- NAVIGATION BAR SECTION-->
+        <section class="header-section js-nav-bar ">
             <div class="container-fluid">
                 
-                <div class="row header">
+                <div class="row header   ">
                     <div class="col-md-3 col-xs-3 logo-holder">
                         <img class="logo" src="resources/css/images/logo2.png" alt="logo">
                     </div>
-                    <div class="col-md-9 col-xs-9 main-nav">
-                        <ul>
+                    <div class="col-md-9 col-xs-7 main-nav">
+                        <ul class="js-show">
                             <li><a href="index.html" >Home</a></li>
-                            <li><a href="cars.html" >Our Cars</a></li>
+                            <li><a href="cars.html">Our Cars</a></li>
                             <li><a href="team.html">our team</a></li>
-                            <li><a href="gallery.html" >Gallery</a></li>
-                            <li><a href="#" class="selected">what's new?</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="#"  class="selected">what's new?</a></li>
                             
                         </ul>
                     </div>
-                </div></div></section>
+                    <div class="col-md-1 col-xs-2 hamburger-icon"><a class="js-nav-icon"><i class="ion-navicon"></i></a></div>
+                </div></div>
+        </section>
+        
+        
                 
         <header>
             <div class="container-fluid feature-head">
@@ -44,7 +50,7 @@
         </header>
             
             
-        <section class="news section light-bg">
+        <section class="news section light-bg js-sticky-start">
             <a name="link-from-home"></a>
             <div class="container">
                 <div class="row section-heading">
@@ -102,7 +108,47 @@
         </section>
         
       
-            
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        
+        <script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
+            <script  type="text/javascript">
+               
+            //for responsive nav bar
+                 $(document).ready(function(){
+                //query for sticky navigation
+                $('.js-sticky-start').waypoint(function(direction){
+                    if (direction=="down"){
+                        $('.js-nav-bar').addClass('sticky-nav');
+                    }
+                    else{
+                        $('.js-nav-bar').removeClass('sticky-nav');
+                    }
+                    
+                    
+                },{
+                    offset:'60px'
+                });
+                
+               //mobile navigation
+                $('.js-nav-icon').click(function(){
+                   var nav=$('.js-show');
+                    nav.slideToggle(300);
+                    
+                    var icon=$('.js-nav-icon i');
+                    if (icon.hasClass('ion-navicon'))
+                        {
+                            icon.addClass('ion-android-close');
+                            icon.removeClass('ion-navicon');
+                        }
+                    else{
+                            icon.addClass('ion-navicon');
+                            icon.removeClass('ion-android-close');
+                        }
+                   
+                });
+                
+            });
+        </script>        
         
       
             
