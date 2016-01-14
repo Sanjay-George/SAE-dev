@@ -8,6 +8,7 @@
     
     body{font-size:16px; }
     .header-section{
+    background-image:-webkit-linear-gradient(#000000, rgb(9, 12, 16));
     background-image:linear-gradient(#000000, rgb(9, 12, 16)); padding-bottom: 20px;}
     .section { padding:20px;}
     .hide-in-small{display: none !important;}
@@ -37,7 +38,7 @@
 /* medium mobile devices*/
 @media screen and (min-width:501px) and (max-width:770px) and (orientation:landscape)
 {   
-        .header-section{padding-bottom: 20px; height:auto; background-image:linear-gradient(#000000, rgba(52, 73, 94, 0.69));}
+        .header-section{padding-bottom: 20px; height:auto; background-image:-webkit-linear-gradient(#000000, rgba(52, 73, 94, 0.69)); background-image:linear-gradient(#000000, rgba(52, 73, 94, 0.69));}
      body{font-size:16px; }
     .section { padding:30px;}
     
@@ -59,7 +60,7 @@
 /* for  small mobile devices  */
 @media screen and (max-width:500px) and (orientation:portrait)
 {   
-    .header-section{height:100%; padding-bottom: 20px; background-image:linear-gradient(#000000, rgb(9, 12, 16)); padding-bottom: 20px;}
+    .header-section{height:100%; padding-bottom: 20px; background-image:-webkit-linear-gradient(#000000, rgb(9, 12, 16)); background-image:linear-gradient(#000000, rgb(9, 12, 16)); padding-bottom: 20px;}
     body{font-size:16px; }
     .section {padding-top:20px;padding-bottom: 20px;}
    
@@ -90,7 +91,7 @@
 /*large mobile devices*/
 @media screen and (min-width:501px) and (max-width:770px) and (orientation:portrait)
 {   
-    .header-section{min-height: auto;padding-bottom: 50px; background-image:linear-gradient(#000000,rgba(52, 73, 94, 0.69));}
+    .header-section{min-height: auto;padding-bottom: 50px; background-image:-webkit-linear-gradient(#000000, rgba(52, 73, 94, 0.69)); background-image:linear-gradient(#000000,rgba(52, 73, 94, 0.69));}
     body{font-size:16px; }
    
 

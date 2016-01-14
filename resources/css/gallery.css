@@ -80,12 +80,20 @@ body{
 {
     margin:0px 0px;
     padding:10px 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-height:auto;
+    
+     background-image:-webkit-linear-gradient(#000000, rgb(9, 12, 16));
     
      background-image:linear-gradient(#000000, rgb(9, 12, 16));
 }
             .header{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
                 display: flex;
             }
 .logo{
@@ -100,11 +108,20 @@ body{
 
 .main-nav{
     margin: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .main-nav ul{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     min-width:100%;
     margin-top:0px;
@@ -123,6 +140,7 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     color:#89a4be;
+    -webkit-transition: border-bottom .5s, color .5s;
     transition: border-bottom .5s, color .5s;
 }
 .main-nav a:hover{
@@ -149,6 +167,7 @@ body{
                 min-width: 100%;
                 box-shadow: 0px 2px 7px #3e3d3d;
                 z-index: 9999;
+                 background-image:-webkit-linear-gradient(#000000, rgb(9, 12, 16));
                  background-image:linear-gradient(#000000, rgb(9, 12, 16));
                 
 }
@@ -162,6 +181,9 @@ body{
             /*-------------HAMBURGER MENU only till 998px--------------*/
             .hamburger-icon {
                 min-height: 100%;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
                 justify-content: center;
                 display: none;
 }
@@ -183,17 +205,29 @@ body{
                     max-height: 70vh;
                 }
                 .header{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
                     display: flex;
                     min-height: 100%;
                     
                 }
                 .hamburger-icon{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
                     display: flex;
                     min-height: 100%;
                 }
                 .logo-holder{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
                     display: flex;
                     min-height: 100%;
+                    -webkit-box-pack: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
                     justify-content: center;
                     margin:5px;
                    }
@@ -229,6 +263,8 @@ body{
 /*------------GALLERY HEADER SECtION--------------------------*/
 header{
      
+    background-image:-webkit-linear-gradient(rgba(38, 54, 69, 0.33), rgb(0, 0, 0) 70%), url(images/gallery.jpg);
+     
     background-image:linear-gradient(rgba(38, 54, 69, 0.33),rgb(0, 0, 0) 70%),url(images/gallery.jpg);
     height: 60vh;
     background-size: cover;
@@ -256,6 +292,8 @@ h1{
     font-size: 370%;
     font-weight:300;
     color: rgba(255, 255, 255, 0.89);
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -269,7 +307,12 @@ h1{
 
 /*------------------CAR SECTION common-------------------*/
 .zoom-gallery{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
     flex-wrap:wrap;
     /*box-shadow: 0px 1px 2px #000;*/
     
@@ -277,8 +320,16 @@ h1{
 
 .car-text{
     margin-top:10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .car-desc{
@@ -312,8 +363,17 @@ h1{
 .img-thumbnail{
    max-height: auto;
     background-color: #d6dfe9;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0px 0px;
    
@@ -323,6 +383,7 @@ h1{
     max-width: 100%;
     margin: 5px 3px;
      box-shadow: 0px 0px 0px #000;
+    -webkit-transition: box-shadow .3s;
     transition: box-shadow .3s;
    
 }
@@ -352,6 +413,7 @@ h1{
 
 /*------------------Dark background section-------------*/
 .dark-bg{
+      background-image:-webkit-linear-gradient(rgba(38, 54, 69, 0.81), rgb(0, 0, 0) 70%), url(images/back3.jpg);
       background-image:linear-gradient(rgba(38, 54, 69, 0.81),rgb(0, 0, 0) 70%),url(images/back3.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -370,11 +432,16 @@ color: #fff;
     max-height:200px;
     max-width: 100%;
     margin: 5px 3px;
+     -webkit-transform: scale(1.00);
+     -ms-transform: scale(1.00);
      transform: scale(1.00);
+    -webkit-transition: -webkit-transform .5s;
     transition: transform .5s;
    
 }
 .dark-bg .img-thumbnail>img:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
     transform: scale(1.05);
 
 }
@@ -405,6 +472,8 @@ color: #fff;
     font-weight: 100;
     font-size: 100%;
    
+    background: -webkit-linear-gradient(rgba(62, 87, 113, 0.67) 20%, #000000 80%);
+   
     background: linear-gradient(rgba(62, 87, 113, 0.67) 20%, #000000 80%);
 
 }
@@ -424,6 +493,9 @@ color: #fff;
 .social-nav ul{
     padding: 0px;
     list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     margin-left:auto;
     margin-right:auto;
@@ -437,6 +509,7 @@ color: #fff;
     padding: 12px 20px;
     text-decoration: none;
     color:#fff;
+    -webkit-transition : color .3s;
     transition : color .3s;
 }
 .facebook:hover{
