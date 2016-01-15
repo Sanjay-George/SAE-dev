@@ -8,9 +8,9 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="slick-1.5.9/slick/slick-min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
         <link rel="stylesheet" href="slick-1.5.9/slick/slick-theme-min.css">
-          <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="resources/css/homepage2-min.css">
         <link rel="stylesheet" href="resources/css/home_queries-min.css">
         
@@ -44,8 +44,8 @@
                 
     <section class="header-section">
         <div class="container-fluid">    
-            <div class="row">
-                <div class="slider">
+            <div class="row ">
+                <div class="js-toggle-class">
                     
                     <div class="item">
                         <div class="hero-content">
@@ -251,103 +251,13 @@
         
       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="
+https://cdn.jsdelivr.net/jquery.waypoints/2.0.5/waypoints.min.js
+"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
         <script type="text/javascript" src="resources/js/slider-min.js"></script>
         
-            <script>
-                //for toggling the achievements and specs list
-                $(document).ready(function() {
-                    $('.achieve').click(function() {
-                    $('.achieve>.sub-nav1').slideToggle(500);
-        
-                    });
-                    $('.specs').click(function() {
-                    $('.specs>.sub-nav1').slideToggle(500);
-                    });
-                    
-                    //for scrolling function
-                    $('.js-scroll-to-sponsors').click(function(){
-                        $('html,body').animate({scrollTop: $('.js-sponsors').offset().top},1000);
-                                                
-                    });
-                    $('.js-scroll-to-whats-new').click(function(){
-                        $('html,body').animate({scrollTop: $('.js-whats-new').offset().top},1000);
-                                                
-                    }); 
-                    $('.js-scroll-to-cars').click(function(){
-                        $('html,body').animate({scrollTop: $('.js-cars').offset().top},1500);
-                                                
-                    }); 
-
-               //for news-slider
-           
-                     $('.news-slider').slick({
-                        autoplay:true,
-                        autoplaySpeed:3000,
-                        dots:false,
-                        
-                        mobileFirst:true,
-                        pauseOnHover:false,
-                        centerMode:true,
-                        centerPadding:'13%',
-                        responsive:[
-                        {
-                            breakpoint: 1000,
-                            settings: {
-                               centerPadding:'13%'
-                             }
-                        },
-                       
-                        {
-                            breakpoint:001,
-                            settings:{
-                                centerMode:false
-                            }
-                        }
-                     ]
-                        
-                     });
-               
-                    
-                    
-            //query for sticky navigation       
-                $('.js-sticky-start').waypoint(function(direction){
-                    if (direction=="down"){
-                        $('.js-nav-bar').addClass('sticky-nav');
-                    }
-                    else{
-                        $('.js-nav-bar').removeClass('sticky-nav');
-                    }
-                    
-                    
-                },{
-                    offset:'60px'
-                }); 
-                    
-                    
-            
-                //mobile navigation
-                $('.js-nav-icon').click(function(){
-                   var nav=$('.js-show');
-                    nav.slideToggle(300);
-                    
-                    var icon=$('.js-nav-icon i');
-                    if (icon.hasClass('ion-navicon'))
-                        {
-                            icon.addClass('ion-android-close');
-                            icon.removeClass('ion-navicon');
-                        }
-                    else{
-                            icon.addClass('ion-navicon');
-                            icon.removeClass('ion-android-close');
-                        }
-                   
-                });
-             });
-            
-
-            </script>
+            <script type="text/javascript">$(document).ready(function(){$(".achieve").click(function(){$(".achieve>.sub-nav1").slideToggle(500)}),$(".specs").click(function(){$(".specs>.sub-nav1").slideToggle(500)}),$(".js-scroll-to-sponsors").click(function(){$("html,body").animate({scrollTop:$(".js-sponsors").offset().top},1e3)}),$(".js-scroll-to-whats-new").click(function(){$("html,body").animate({scrollTop:$(".js-whats-new").offset().top},1e3)}),$(".js-scroll-to-cars").click(function(){$("html,body").animate({scrollTop:$(".js-cars").offset().top},1500)}),$(".news-slider").slick({autoplay:!0,autoplaySpeed:3e3,dots:!1,mobileFirst:!0,pauseOnHover:!1,centerMode:!0,centerPadding:"13%",responsive:[{breakpoint:1e3,settings:{centerPadding:"13%"}},{breakpoint:1,settings:{centerMode:!1}}]}),$(".js-sticky-start").waypoint(function(s){"down"==s?$(".js-nav-bar").addClass("sticky-nav"):$(".js-nav-bar").removeClass("sticky-nav")},{offset:"60px"}),$(".js-nav-icon").click(function(){var s=$(".js-show");s.slideToggle(300);var o=$(".js-nav-icon i");o.hasClass("ion-navicon")?(o.addClass("ion-android-close"),o.removeClass("ion-navicon")):(o.addClass("ion-navicon"),o.removeClass("ion-android-close"))})});</script>
         
     </body>
 </html>
