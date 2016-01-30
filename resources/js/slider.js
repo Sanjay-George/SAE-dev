@@ -1,5 +1,6 @@
 //function to just make the slider...
 function makeSlider(){
+    $('.js-toggle-class').addClass('slider');
      $('.slider').slick({
                     autoplay:true,
                     autoplaySpeed:5000,
@@ -12,7 +13,7 @@ function makeSlider(){
                             breakpoint: 1000,
                             settings: {
                                 autoplay:true,
-                                fade:false
+                                fade:true
                                 
                             }
                         },
@@ -20,7 +21,7 @@ function makeSlider(){
                             breakpoint:500,
                             settings:{
                                 dots:false,
-                                fade:false,
+                                fade:true,
                                 autoplay:true,
                                 adaptiveHeight:false,
                                 arrows:false
@@ -28,6 +29,7 @@ function makeSlider(){
                         }
                      ]
                  });
+    
 }
 
 // function to remove the slider
