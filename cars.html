@@ -40,6 +40,7 @@
                             <li><a href="team.html">our team</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="news.html">what's new?</a></li>
+                            <li><a href="Phoenix__Brochure.pdf" target="_blank" download>Brochure</a></li>
                             
                         </ul>
                     </div>
@@ -183,7 +184,7 @@
                 
                 
                 <div class="row car-text">
-                    <div class="col-md-5 col-xs-10 car-desc achieve2 hvr-float-shadow">
+                    <div class="col-md-5 col-xs-10 car-desc achieve hvr-float-shadow">
                         <h4>ACHIEVEMENTS</h4>
                         <ul class="sub-nav1">
                             <li>1st in Cost Report</li>
@@ -195,7 +196,7 @@
                         
                       
                     </div>
-                    <div class="col-md-5 col-xs-10 car-desc specs2 hvr-float-shadow">
+                    <div class="col-md-5 col-xs-10 car-desc specs hvr-float-shadow">
                          <h4>SPECS</h4>
                         
                         <ul class="sub-nav1">
@@ -233,6 +234,7 @@
                     <li><a class="facebook" href="https://www.facebook.com/phoenixracing360" target="_blank"><i class="ion-social-facebook"></i></a></li>
                     <li><a class='twitter' href="https://twitter.com/teamSAE_SVNIT" target="_blank"><i class="ion-social-twitter"></i></a></li>
                     <li><a class="instagram" href="https://www.instagram.com/fsae.svnit/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                    <li><a class="youtube" href="https://www.youtube.com/channel/UCKMDxorL5J6iKfRo_M2e2Hg" target="_blank"><i class="ion-social-youtube"></i></a></li>
                 
                 </ul></div>
             
@@ -245,7 +247,7 @@
         
       
             
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
         <script type="text/javascript" src="vendors/js/magnific-popup-min.js"></script>
         <script type="text/javascript" src="vendors/js/jquery.waypoints.min.js"></script>
             <script  type="text/javascript">
@@ -279,20 +281,13 @@
         //for toggling the achievements and specs list
                 $(document).ready(function() {
     $('.achieve').click(function() {
-        $('.achieve>.sub-nav1').slideToggle(300);
+        $(this).children('.sub-nav1').slideToggle(500);
         
     });
     $('.specs').click(function() {
-        $('.specs>.sub-nav1').slideToggle(300);
+         $(this).children('.sub-nav1').slideToggle(500);
     });
                     
-    $('.achieve2').click(function() {
-        $('.achieve2>.sub-nav1').slideToggle(300);
-        
-    });
-    $('.specs2').click(function() {
-        $('.specs2>.sub-nav1').slideToggle(300);
-    });
 });
             //for responsive nav bar
                  $(document).ready(function(){
@@ -310,7 +305,7 @@
                     offset:'60px'
                 });
                 
-               //mobile navigation
+                //mobile navigation
                 $('.js-nav-icon').click(function(){
                    var nav=$('.js-show');
                     nav.slideToggle(300);
@@ -320,15 +315,17 @@
                         {
                             icon.addClass('ion-android-close');
                             icon.removeClass('ion-navicon');
+                            $('.js-main-nav-resize').css("height","auto");
                         }
                     else{
                             icon.addClass('ion-navicon');
                             icon.removeClass('ion-android-close');
+                            
                         }
                    
                 });
-                
-            })
+             });
+            
         </script>
     
     
